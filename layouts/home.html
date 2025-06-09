@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section>
+  <h2>{{ .Site.Title }}</h2>
+  <p>
+    I'm a software engineer from Indonesia who cares about details and quality.
+    My current focus is on learning system design and back-end development, especially
+    Go and RESTful API. With a solid foundation in software development, I'm starting
+    to build my own projects and explore new opportunities.
+  </p>
+  <p>
+    You can find my work on <a href="https://github.com/wwiyoko" target="_blank">GitHub</a>,
+    and feel free to contact me by <a href="mailto:wwiyoko@protonmail.com">email</a>.
+  </p>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="projects">
+    {{- range .Site.Data.projects }}
+    <article>
+      <h3>{{ .name }}</h3>
+      <p>{{ .desc }}</p>
+      <ul class="links">
+        {{- range .links }}
+        <li><a href="{{ .url }}" target="_blank">{{ .label }}</a></li>
+        {{- end }}
+      </ul>
+    </article>
+    {{- end }}
+  </div>
+</section>
+{{ end }}

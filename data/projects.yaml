@@ -1,0 +1,12 @@
+- name: Dark Moon
+  desc: A Neovim color scheme derived from blue-moon.
+  links:
+    - label: Source Code
+      url: https://github.com/wwiyoko/dark-moon
+- name: i3 Color Configurator
+  desc: Customize i3 theme with online color selector and live preview.
+  links:
+    - label: Source Code
+      url: https://github.com/wwiyoko/i3-color-configurator
+    - label: Website
+      url: https://wwiyoko.github.io/i3-color-configurator/

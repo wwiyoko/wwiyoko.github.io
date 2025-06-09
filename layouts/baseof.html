@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{- if .Description }}
+    <meta name="description" content="{{ .Description }}">
+    {{- else }}
+    <meta name="description" content="{{ .Site.Title }}'s personal website.">
+    {{- end }}
+    <link rel="icon" type="image/x-icon" href="{{ relURL "favicon.ico" }}">
+    {{- $css := resources.Get "style.css" | minify }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    <link rel="alternate" type="application/rss+xml" href="{{ relURL "rss.xml" }}">
+    {{- if .IsHome }}
+    <title>{{ .Site.Title }}</title>
+    {{- else if eq .Title (title .Data.Term) }}
+    <title>Tag: {{ .Data.Term }} | {{ .Site.Title }}</title>
+    {{- else }}
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    {{- end }}
+  </head>
+  <body>
+    <nav>
+      <a href="{{ relURL "" }}">About</a>
+      <a href="{{ relURL "posts" }}">Posts</a>
+      <a href="{{ relURL "tags" }}">Tags</a>
+      <a href="{{ relURL "rss.xml" }}">RSS</a>
+    </nav>
+
+    <main>
+      {{- block "main" . }}{{ end -}}
+    </main>
+
+    <footer>
+      <p>
+        <a href="https://github.com/wwiyoko/wwiyoko.github.io" target="_blank">This work</a>
+        is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+      </p>
+    </footer>
+  </body>
+</html>
