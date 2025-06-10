@@ -7,15 +7,15 @@ tags:
 draft: false
 ---
 
-Hi! Welcome to my first post. In this post, I will cover all the things why I'm
-creating this site, so hopefully it will give you an insight into everything
+Hi! Welcome to my first post. In this post, I will cover all the things why I
+made this site, so hopefully it will give you an insight into everything
 with a detail about it.
 
 ## Why Blogging?
 
-I believe this will be a common reason why most people also start a blog: it's
+I believe this will be a common reason why most people also started a blog: it's
 sharing. Whether sharing their knowledge, experience, or even their hobbies. All
-those things are also the reason why I've started to create one. I would like to
+those things are also the reason why I've started to made one. I would like to
 share any knowledge or tips that I got, as well as any topics or ideas that I
 may come up with for this blog.
 
@@ -40,14 +40,14 @@ features are limited with a paid plan, and you don't have full control of how
 your website works under the hood.
 
 Just like any other SSG (Static Site Generator) such as Astro and Hexo, Hugo
-it's just for a static site, meaning there is no server-side processing involved
+it's for a static site, meaning there is no server-side processing involved
 (except hosting the site) so it's less vulnerable to security risks. In
 addition, Hugo is fast, well maintained, and has a large community.
 
 ## What Will You Expect From This Blog?
 
-The topics I will cover on this blog can be varied. Anything what I would like
-to write from ideas that going through. But most likely it will be topics about
+The topics I will cover on this blog can be varied. Anything that I would like
+to write from ideas that are going through. But most likely it will be topics about
 Linux and a few tips about various subjects that non-tech savvy can apply.
 
 I'm expecting that I will post at least one post either every one or two months,
@@ -55,9 +55,8 @@ and hopefully the content will bring something useful to you as a reader.
 
 ## How I Maintain This Blog?
 
-I maintain this blog as much as I care about my writing skills. I love to
-improving my writing skills by creating a blog like this one. To make it less
-boring and less complex, I will provide a simple explanation for each topic, so
+I maintain this blog as much as I care about my writing skills. To make it less
+boring and complex, I will provide a simple explanation for each topic, so
 both native and non-native English speakers can easily understand my word choices.
 
 ## Challenges I Faced
@@ -65,7 +64,7 @@ both native and non-native English speakers can easily understand my word choice
 The challenges of writing a post on the blog are only one thing: my English
 skill issue. Sometimes I need help with translators and [LanguageTool](https://languagetool.org/)
 to fix my grammar. So if you are reading this as a native English speaker, you
-get the point of why and how I write. But regardless of that, I'm always trying
+get the point of why and how I write. Regardless of that, I'm always trying
 to improve the language, which is also quite challenging for a non-native
 English speaker like me.
 
