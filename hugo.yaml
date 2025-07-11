@@ -1,13 +1,8 @@
 baseURL: https://wwiyoko.github.io/
 title: Wahyu Wiyoko
-pluralizeListTitles: false
-disableLiveReload: true
 
 taxonomies:
   tag: tags
-
-disableKinds:
-  - sitemap
 
 outputs:
   section:
@@ -16,12 +11,3 @@ outputs:
     - html
   term:
     - html
-
-outputFormats:
-  rss:
-    baseName: rss
-
-markup:
-  highlight:
-    noClasses: false
-    lineNumbersInTable: false

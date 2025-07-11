@@ -1,26 +1,26 @@
 {{ define "main" }}
-<section class="content-list">
+<section>
   {{- if eq .Title (title .Data.Term) }}
   <h2>Tag: {{ .Data.Term }}</h2>
   {{- else }}
   <h2>{{ .Title }}</h2>
   {{- end }}
 
-  <ul>
-    {{- if eq .Page .Site.Taxonomies.tags.Page }}
-    {{- range .Site.Taxonomies.tags }}
-    <li>
-      <a href="{{ .Page.RelPermalink }}">{{ .Page.Data.Term }} ({{ .Count }})</a>
-    </li>
-    {{- end }}
-    {{- else }}
-    {{- range .Pages }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a> -
+  {{- if eq .Page .Site.Taxonomies.tags.Page }}
+  {{- range .Site.Taxonomies.tags }}
+  <p>
+    <a href="{{ .Page.RelPermalink }}">{{ .Page.Data.Term }} ({{ .Count }})</a>
+  </p>
+  {{- end }}
+  {{- else }}
+  {{- range .Pages }}
+  <p>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a> -
+    <time datetime="{{ .Date.Format "2006-01-02" }}">
       {{ .Date.Format "January 2, 2006" }}
-    </li>
-    {{- end }}
-    {{- end }}
-  </ul>
+    </time>
+  </p>
+  {{- end }}
+  {{- end }}
 </section>
 {{ end }}

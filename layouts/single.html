@@ -2,7 +2,9 @@
 <article>
   <header>
     <h2>{{ .Title }}</h2>
-    <p>{{ .Date.Format "January 2, 2006" }}</p>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">
+      {{ .Date.Format "January 2, 2006" }}
+    </time>
   </header>
   {{ .Content -}}
 </article>
