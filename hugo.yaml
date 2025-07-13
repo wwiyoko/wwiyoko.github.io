@@ -11,3 +11,7 @@ outputs:
     - html
   term:
     - html
+
+markup:
+  highlight:
+    style: github-dark

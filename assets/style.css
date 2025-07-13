@@ -52,23 +52,25 @@ table {
 
 td,
 th {
-  border: 1px solid var(--foreground);
+  border: 2px solid var(--foreground);
   padding: 0.5rem;
 }
 
 blockquote {
   padding-left: 1rem;
   border-left: 3px solid var(--foreground);
+  margin-left: 0;
 }
 
 code:not(pre code) {
   border: 1px solid var(--foreground);
   padding-inline: 0.2rem;
+  font-size: 0.9rem;
 }
 
 pre {
   overflow-x: auto;
-  border: 1px solid var(--foreground);
+  border: 2px solid var(--foreground);
   padding: 1rem;
 }
 
