@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section>
+  <h2>{{ .Site.Title }}</h2>
+  <p>
+    I am a detail-oriented software engineer from Indonesia.
+    My current focus is on learning back-end development, particularly
+    RESTful API. With a solid foundation in software development, I am beginning
+    to build my own projects and explore new opportunities.
+  </p>
+  <p>
+    <a href="mailto:wwiyoko@protonmail.com">Email</a> |
+    <a href="https://github.com/wwiyoko" target="_blank">GitHub</a> |
+    <a href="https://youtube.com/@baskbosk" target="_blank">YouTube</a> |
+    <a href="/index.xml">RSS</a>
+  </p>
+</section>
+<section>
+  <h2>Projects</h2>
+  <p>
+    <a href="https://github.com/wwiyoko/dark-moon" target="_blank">Dark Moon</a>
+    - A dark Neovim color scheme derived from blue-moon.
+  </p>
+  <p>
+    <a href="https://wwiyoko.github.io/i3-color-configurator/" target="_blank">i3 Color Configurator</a>
+    - Customize i3 theme with online color selector and live preview. View the
+    <a href="https://github.com/wwiyoko/i3-color-configurator" target="_blank">source code</a>.
+  </p>
+</section>
+<section>
+  <h2>Writing</h2>
+  {{- range .Site.RegularPages }}
+  <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+  {{- end }}
+</section>
+{{ end }}

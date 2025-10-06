@@ -1,0 +1,9 @@
+baseURL: https://wwiyoko.github.io/
+title: Wahyu Wiyoko
+
+disableKinds:
+  - taxonomy
+
+markup:
+  highlight:
+    noClasses: false

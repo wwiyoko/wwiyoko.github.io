@@ -1,0 +1,85 @@
+:root {
+  --foreground: #333333;
+  --background: #e6e6e6;
+  --overlay: #d9d9d9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #cccccc;
+    --background: #121212;
+    --overlay: #1f1f1f;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: var(--foreground);
+  background-color: var(--background);
+  max-width: 40rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+section:nth-of-type(2) {
+  margin-block: 3rem;
+}
+
+a {
+  color: var(--foreground);
+}
+
+header h2 {
+  margin-bottom: 0;
+}
+
+header time {
+  display: block;
+  margin-block: 0.3rem 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+blockquote {
+  padding-left: 1rem;
+  border-left: 3px solid var(--foreground);
+  margin-left: 0;
+}
+
+code:not(pre code) {
+  background-color: var(--overlay);
+  padding: 0.1rem 0.3rem;
+}
+
+pre {
+  overflow-x: auto;
+  background-color: var(--overlay);
+  padding: 1rem;
+}
+
+table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.5rem;
+}
+
+tr:nth-of-type(odd):not(thead tr) {
+  background-color: var(--overlay);
+}
+
+footer {
+  font-size: 0.8rem;
+  margin-top: 2.5rem;
+}
+
+.line [class^="k"] {
+  font-weight: 700;
+}
